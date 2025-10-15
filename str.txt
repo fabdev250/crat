@@ -1,0 +1,29 @@
+src/
+├── components/
+│   ├── Header/
+│   │   ├── Header.jsx
+│   │   └── MobileMenu.jsx
+│   ├── Hero/
+│   │   └── Hero.jsx
+│   ├── Mission/
+│   │   └── Mission.jsx
+│   ├── Products/
+│   │   └── Products.jsx
+│   ├── Testimonials/
+│   │   └── Testimonials.jsx
+│   ├── Blog/
+│   │   └── Blog.jsx
+│   ├── Contact/
+│   │   └── Contact.jsx
+│   └── Footer/
+│       └── Footer.jsx
+├── pages/
+│   ├── Home.jsx
+│   ├── Mission.jsx
+│   ├── Projects.jsx
+│   ├── Faqs.jsx
+│   ├── Pricing.jsx
+│   └── Careers.jsx
+├── App.jsx
+├── main.jsx
+└── index.css
