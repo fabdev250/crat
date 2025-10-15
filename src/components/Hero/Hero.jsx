@@ -6,22 +6,22 @@ const Hero = () => {
 
   const slides = [
     {
-      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      image: "https://advcloudfiles.advantech.com/cms/f31c3275-af78-45cf-9a0f-3a9762d357c6/Content/content-image-1627985071702.jpg",
       title: "Building Hardware and Software Tools for Farmers in Africa",
       description: "Crat_Agri provides an ecosystem of Smart Greenhouses and Solar Dryers equipped with FarmShield™ IoT sensors connected to our FarmCloud™ software enabling farmers to double incomes on less land, use less water, reduce post harvest losses and access premium markets."
     },
     {
-      image: "https://images.unsplash.com/photo-1574943320219-553eb213f72d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      image: "https://plus.unsplash.com/premium_photo-1663076306950-f6602c629ff4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1257",
       title: "Smart Greenhouses for Modern Farming",
       description: "Our climate-controlled greenhouses protect your crops from extreme weather while optimizing growing conditions for maximum yield and quality throughout the year."
     },
     {
-      image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2052&q=80",
+      image: "https://images.unsplash.com/photo-1713952160156-bb59cac789a9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1332",
       title: "IoT Technology for Precision Agriculture",
       description: "FarmShield™ sensors monitor soil moisture, temperature, and humidity in real-time, automating irrigation and climate control for optimal crop growth."
     },
     {
-      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      image: "https://img.freepik.com/premium-photo/global-business-networking-connect-strategically-success-international-markets_937679-13551.jpg",
       title: "Connect to Premium Markets",
       description: "FarmCloud™ links farmers directly to buyers, provides export compliance documentation, and helps you access higher-value markets with traceability and quality assurance."
     }
