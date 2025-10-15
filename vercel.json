@@ -1,16 +1,10 @@
 {
   "version": 2,
-  "public": true,
   "builds": [
-    {
-      "src": "dist/**",
-      "use": "@vercel/static"
-    }
+    { "src": "vite.config.*", "use": "@vercel/static-build" }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
+    { "handle": "filesystem" },
+    { "src": "/.*", "dest": "/index.html" }
   ]
 }
