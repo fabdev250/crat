@@ -12,15 +12,15 @@
   "categories": ["business", "productivity", "utilities"],
   "screenshots": [
     {
-      "src": "/screenshots/mobile-screenshot.png",
-      "sizes": "375x812",
+      "src": "/icons/scrn.png",
+      "sizes": "319x688",
       "type": "image/png",
       "form_factor": "narrow",
       "label": "Crat_Agri mobile app homepage"
     },
     {
-      "src": "/screenshots/desktop-screenshot.png",
-      "sizes": "1920x1080",
+      "src": "/icons/sceern.png",
+      "sizes": "1582x785",
       "type": "image/png",
       "form_factor": "wide",
       "label": "Crat_Agri desktop dashboard"

@@ -9,12 +9,14 @@ import Projects from './pages/Projects';
 import Faqs from './pages/Faqs';
 import Pricing from './pages/Pricing';
 import Careers from './pages/Careers';
+import PWAInstallPrompt from './components/PWAInstallPrompt';
 
 function App() {
   return (
     <Router>
       <div className="App min-h-screen flex flex-col">
         <Header />
+        <PWAInstallPrompt />
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
