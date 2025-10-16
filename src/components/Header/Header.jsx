@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { 
   Target, 
   FolderKanban, 
@@ -19,6 +20,8 @@ import {
 } from 'lucide-react';
 
 const MobileMenu = ({ isOpen, onClose }) => {
+  const navigate = useNavigate();
+
   if (!isOpen) return null;
 
   const navItems = [
@@ -30,13 +33,34 @@ const MobileMenu = ({ isOpen, onClose }) => {
   ];
 
   const productItems = [
-    { name: 'FarmCloud', icon: Cloud, href: '/products/farmcloud' },
-    { name: 'FarmShield', icon: Shield, href: '/products/farmshield' },
-    { name: 'Smart Greenhouses', icon: Sprout, href: '/products/greenhouses' },
-    { name: 'Smart Solar Dryers', icon: Sun, href: '/products/solar-dryers' },
-    { name: 'Smart Drip Kits', icon: Droplets, href: '/products/drip-kits' },
-    { name: 'Herbs for Export', icon: Leaf, href: '/products/herbs' },
+    { name: 'FarmCloud', icon: Cloud, href: '/#farmcloud' },
+    { name: 'FarmShield', icon: Shield, href: '/#farmshield' },
+    { name: 'Smart Greenhouses', icon: Sprout, href: '/#greenhouses' },
+    { name: 'Smart Solar Dryers', icon: Sun, href: '/#solar-dryers' },
+    { name: 'Smart Drip Kits', icon: Droplets, href: '/#drip-kits' },
+    { name: 'Herbs for Export', icon: Leaf, href: '/#herbs' },
   ];
+
+  const handleProductClick = (href) => {
+    navigate('/');
+    setTimeout(() => {
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+    onClose();
+  };
+
+  const handleConsultantClick = () => {
+    navigate('/contact');
+    onClose();
+  };
+
+  const handleLoginClick = () => {
+    navigate('/farmcloud-login');
+    onClose();
+  };
 
   return (
     <div className="fixed inset-0 z-50 md:hidden">
@@ -58,14 +82,14 @@ const MobileMenu = ({ isOpen, onClose }) => {
               </h3>
               <div className="space-y-1">
                 {productItems.map((item) => (
-                  <a
+                  <button
                     key={item.name}
-                    href={item.href}
-                    className="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-green-50 hover:text-green-600 rounded-lg transition group"
+                    onClick={() => handleProductClick(item.href)}
+                    className="w-full flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-green-50 hover:text-green-600 rounded-lg transition group"
                   >
                     <item.icon className="w-5 h-5 text-gray-400 group-hover:text-green-600 transition" />
                     <span className="font-medium">{item.name}</span>
-                  </a>
+                  </button>
                 ))}
               </div>
             </div>
@@ -74,23 +98,30 @@ const MobileMenu = ({ isOpen, onClose }) => {
 
             {/* Navigation Items */}
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
+                to={item.href}
+                onClick={onClose}
                 className="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-green-50 hover:text-green-600 rounded-lg transition group"
               >
                 <item.icon className="w-5 h-5 text-gray-400 group-hover:text-green-600 transition" />
                 <span className="font-medium">{item.name}</span>
-              </a>
+              </Link>
             ))}
           </div>
           
           <div className="mt-8 space-y-3">
-            <button className="w-full flex items-center justify-center gap-2 px-4 py-3 text-green-600 hover:bg-green-50 rounded-lg transition font-medium">
+            <button 
+              onClick={handleLoginClick}
+              className="w-full flex items-center justify-center gap-2 px-4 py-3 text-green-600 hover:bg-green-50 rounded-lg transition font-medium"
+            >
               <LogIn className="w-5 h-5" />
               Log in to FarmCloud™
             </button>
-            <button className="w-full flex items-center justify-center gap-2 bg-green-600 text-white px-4 py-3 rounded-lg hover:bg-green-700 transition font-medium shadow-lg shadow-green-600/30">
+            <button 
+              onClick={handleConsultantClick}
+              className="w-full flex items-center justify-center gap-2 bg-green-600 text-white px-4 py-3 rounded-lg hover:bg-green-700 transition font-medium shadow-lg shadow-green-600/30"
+            >
               <MessageCircle className="w-5 h-5" />
               Talk to a Consultant
             </button>
@@ -104,6 +135,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isProductsOpen, setIsProductsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const navItems = [
     { name: 'Our mission', icon: Target, href: '/mission' },
@@ -117,40 +149,59 @@ const Header = () => {
     { 
       name: 'FarmCloud', 
       icon: Cloud, 
-      href: '/products/farmcloud',
+      href: '/#farmcloud',
       description: 'Farm management software platform'
     },
     { 
       name: 'FarmShield', 
       icon: Shield, 
-      href: '/products/farmshield',
+      href: '/#farmshield',
       description: 'IoT sensors and automation'
     },
     { 
       name: 'Smart Greenhouses', 
       icon: Sprout, 
-      href: '/products/greenhouses',
+      href: '/#greenhouses',
       description: 'Climate-controlled growing environments'
     },
     { 
       name: 'Smart Solar Dryers', 
       icon: Sun, 
-      href: '/products/solar-dryers',
+      href: '/#solar-dryers',
       description: 'Efficient post-harvest processing'
     },
     { 
       name: 'Smart Drip Kits', 
       icon: Droplets, 
-      href: '/products/drip-kits',
+      href: '/#drip-kits',
       description: 'Precision irrigation systems'
     },
     { 
       name: 'Herbs for Export', 
       icon: Leaf, 
-      href: '/products/herbs',
+      href: '/#herbs',
       description: 'Premium export-quality herbs'
     },
   ];
+
+  const handleProductClick = (href) => {
+    navigate('/');
+    setTimeout(() => {
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+    setIsProductsOpen(false);
+  };
+
+  const handleConsultantClick = () => {
+    navigate('/contact');
+  };
+
+  const handleLoginClick = () => {
+    navigate('/farmcloud-login');
+  };
 
   return (
     <>
@@ -158,14 +209,14 @@ const Header = () => {
         <div className="container mx-auto px-4 lg:px-6 py-4">
           <div className="flex justify-between items-center">
             {/* Logo */}
-            <a href="/" className="flex items-center group">
+            <Link to="/" className="flex items-center group">
               <div className="w-11 h-11 bg-gradient-to-br from-green-600 to-green-500 rounded-xl flex items-center justify-center shadow-lg shadow-green-600/20 group-hover:shadow-green-600/40 transition-all duration-300 group-hover:scale-105">
                 <span className="text-white font-bold text-xl">C</span>
               </div>
               <span className="ml-3 text-xl font-bold bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent">
                 Crat_Agri
               </span>
-            </a>
+            </Link>
             
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-1">
@@ -190,10 +241,10 @@ const Header = () => {
                     </div>
                     <div className="space-y-1">
                       {productItems.map((item) => (
-                        <a
+                        <button
                           key={item.name}
-                          href={item.href}
-                          className="flex items-start gap-3 px-4 py-3 text-gray-700 hover:bg-green-50 hover:text-green-600 rounded-lg transition group mx-2"
+                          onClick={() => handleProductClick(item.href)}
+                          className="w-full flex items-start gap-3 px-4 py-3 text-gray-700 hover:bg-green-50 hover:text-green-600 rounded-lg transition group mx-2 text-left"
                         >
                           <div className="flex-shrink-0 w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-200 transition">
                             <item.icon className="w-5 h-5 text-green-600" />
@@ -206,7 +257,7 @@ const Header = () => {
                               {item.description}
                             </div>
                           </div>
-                        </a>
+                        </button>
                       ))}
                     </div>
                   </div>
@@ -215,24 +266,30 @@ const Header = () => {
 
               {/* Other Navigation Items */}
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.name}
-                  href={item.href}
+                  to={item.href}
                   className="flex items-center gap-2 px-4 py-2 text-gray-600 hover:text-green-600 hover:bg-green-50 rounded-lg transition-all duration-200 group"
                 >
                   <item.icon className="w-4 h-4 text-gray-400 group-hover:text-green-600 transition" />
                   <span className="font-medium">{item.name}</span>
-                </a>
+                </Link>
               ))}
             </nav>
             
             {/* Desktop Actions */}
             <div className="hidden lg:flex items-center gap-3">
-              <button className="flex items-center gap-2 text-green-600 hover:text-green-700 hover:bg-green-50 px-4 py-2 rounded-lg font-medium transition-all duration-200">
+              <button 
+                onClick={handleLoginClick}
+                className="flex items-center gap-2 text-green-600 hover:text-green-700 hover:bg-green-50 px-4 py-2 rounded-lg font-medium transition-all duration-200"
+              >
                 <LogIn className="w-4 h-4" />
                 Log in to FarmCloud™
               </button>
-              <button className="flex items-center gap-2 bg-gradient-to-r from-green-600 to-green-500 text-white px-5 py-2.5 rounded-lg hover:shadow-lg hover:shadow-green-600/30 transition-all duration-200 font-medium hover:scale-105">
+              <button 
+                onClick={handleConsultantClick}
+                className="flex items-center gap-2 bg-gradient-to-r from-green-600 to-green-500 text-white px-5 py-2.5 rounded-lg hover:shadow-lg hover:shadow-green-600/30 transition-all duration-200 font-medium hover:scale-105"
+              >
                 <MessageCircle className="w-4 h-4" />
                 Talk to a Consultant
               </button>

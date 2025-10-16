@@ -10,6 +10,7 @@ import Faqs from './pages/Faqs';
 import Pricing from './pages/Pricing';
 import Careers from './pages/Careers';
 import PWAInstallPrompt from './components/PWAInstallPrompt';
+import FarmCloudLogin from './pages/FarmCloudLogin';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/faqs" element={<Faqs />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/careers" element={<Careers />} />
+            <Route path="/farmcloud-login" element={<FarmCloudLogin />} />
           </Routes>
         </main>
         <Footer />
