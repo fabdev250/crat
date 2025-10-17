@@ -56,44 +56,41 @@ const Contact = () => {
     {
       icon: Mail,
       label: "General Information",
-      value: "info@cratagri.rw",
-      link: "mailto:info@cratagri.rw",
-      description: "For general inquiries and information",
+      value: "jsongclaude21@gmail.com",
+      link: "jsongclaude21@gmail.com"
     },
     {
-      icon: Send,
-      label: "Sales & FarmCloud™",
-      value: "sales@cratagri.rw",
-      link: "mailto:sales@cratagri.rw",
-      description: "For Smart Greenhouses and FarmCloud™ demos",
+      icon: Phone,
+      label: "Phone Number",
+      value: "0785599926",
+      link: "0785599926"
     },
     {
       icon: MessageCircle,
-      label: "Farmer Support",
-      value: "support@cratagri.rw",
-      link: "mailto:support@cratagri.rw",
-      description: "Technical support for Rwanda farmers",
-    },
+      label: "Customer Support",
+      value: "jsongclaude21@gmail.com",
+      link: "jsongclaude21@gmail.com"
+    }
   ];
 
-  const farmTypes = [
-    "Coffee Farming",
-    "Tea Farming",
-    "Rice Farming",
-    "Vegetable Farming",
-    "Fruit Farming",
-    "Livestock Farming",
-    "Mixed Farming",
-    "Greenhouse Farming",
-    "Other",
-  ];
-
+  // Regions in Rwanda used for the Location select
   const rwandaRegions = [
-    "Western Province (Rubavu, Gisenyi)",
-    "Northern Province",
-    "Southern Province",
-    "Eastern Province",
-    "Kigali City",
+    'Kigali',
+    'Northern Province',
+    'Southern Province',
+    'Eastern Province',
+    'Western Province'
+  ];
+
+  // Common farm types for the Farm Type select
+  const farmTypes = [
+    'Smallholder (subsistence)',
+    'Commercial (cash crops)',
+    'Horticulture (fruits & vegetables)',
+    'Livestock (cattle, goats)',
+    'Poultry',
+    'Aquaculture',
+    'Agroforestry'
   ];
 
   const validateForm = () => {

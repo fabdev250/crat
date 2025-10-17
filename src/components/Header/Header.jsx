@@ -141,8 +141,7 @@ const Header = () => {
     { name: 'Our mission', icon: Target, href: '/mission' },
     { name: 'Our projects', icon: FolderKanban, href: '/projects' },
     { name: 'FAQs', icon: HelpCircle, href: '/faqs' },
-    { name: 'Pricing', icon: DollarSign, href: '/pricing' },
-    { name: 'Careers', icon: Briefcase, href: '/careers' },
+    { name: 'Pricing', icon: DollarSign, href: '/pricing' }
   ];
 
   const productItems = [
@@ -208,13 +207,17 @@ const Header = () => {
       <header className="bg-white/80 backdrop-blur-lg shadow-sm border-b border-gray-100 sticky top-0 z-40">
         <div className="container mx-auto px-4 lg:px-6 py-4">
           <div className="flex justify-between items-center">
-            {/* Logo */}
+            {/* Logo - Updated to use icons/512.png */}
             <Link to="/" className="flex items-center group">
-              <div className="w-11 h-11 bg-gradient-to-br from-green-600 to-green-500 rounded-xl flex items-center justify-center shadow-lg shadow-green-600/20 group-hover:shadow-green-600/40 transition-all duration-300 group-hover:scale-105">
-                <span className="text-white font-bold text-xl">C</span>
+              <div className="w-11 h-11 rounded-xl flex items-center justify-center shadow-lg shadow-green-600/20 group-hover:shadow-green-600/40 transition-all duration-300 group-hover:scale-105 overflow-hidden">
+                <img 
+                  src="/icons/512.png" 
+                  alt="Crat_Agri Logo" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <span className="ml-3 text-xl font-bold bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent">
-                Crat_Agri
+                Digital Agri Innovation
               </span>
             </Link>
             
