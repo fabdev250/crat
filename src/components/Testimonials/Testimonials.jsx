@@ -14,8 +14,8 @@ import {
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Josephine",
-      location: "Laikipia",
+      name: "Majyambere esperance",
+      location: "Rubavu",
       role: "Telephone Farmer",
       content: "Yeah, I think FarmCloud, to be honest, as an app for just capturing farming activities makes it so seamless. I don't know, maybe sometimes just explaining it to another person, they may not get that appreciation...",
       rating: 5,

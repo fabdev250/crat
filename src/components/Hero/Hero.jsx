@@ -111,7 +111,7 @@ const Hero = () => {
             {/* Stats */}
             <div className="flex flex-wrap gap-8 mt-12 pt-8 border-t border-white/20">
               <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold">21,000+</div>
+                <div className="text-2xl md:text-3xl font-bold">500+</div>
                 <div className="text-white/80">Farmers Empowered</div>
               </div>
               <div className="text-center">

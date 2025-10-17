@@ -3,8 +3,8 @@ import { Users, TrendingUp, Target, Leaf, Wifi, Cloud, ArrowRight, CheckCircle2,
 
 const Mission = () => {
   const stats = [
-    { value: '21,000+', label: 'Farmers Empowered', icon: Users },
-    { value: '1M', label: 'Target by 2030', icon: Target },
+    { value: '500+', label: 'Farmers Empowered', icon: Users },
+    { value: '100', label: 'Target by 2030', icon: Target },
     { value: '100%', label: 'Climate Smart', icon: Leaf },
   ];
 
@@ -70,7 +70,7 @@ const Mission = () => {
               <div className="flex gap-3">
                 <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
                 <p className="text-gray-600 text-lg leading-relaxed">
-                  Today, over <span className="font-semibold text-gray-900">21,000 farmers</span> across Africa use our solutions to lower climate risks, 
+                  Today, over <span className="font-semibold text-gray-900">500+ farmers</span> across Africa use our solutions to lower climate risks, 
                   eliminate guesswork in farming and earn better. We believe that farming should not 
                   be risky and complicated. <span className="font-semibold text-gray-900">It should be simple.</span>
                 </p>
@@ -80,7 +80,7 @@ const Mission = () => {
                 <TrendingUp className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
                 <p className="text-gray-600 text-lg leading-relaxed">
                   That's why we have partnered with leading organisations and funders to ensure we 
-                  bring modern farming solutions to <span className="font-semibold text-gray-900">1,000,000 smallholder farmers</span> across Africa.
+                  bring modern farming solutions to <span className="font-semibold text-gray-900">500 smallholder farmers</span> across Rwanda.
                 </p>
               </div>
             </div>

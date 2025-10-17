@@ -27,7 +27,7 @@ const Contact = () => {
     {
       icon: Mail,
       label: "General Information",
-      value: "info@cratagri.io",
+      value: "Tuyizerejeancloude@gmail.com",
       link: "mailto:info@cratagri.io"
     },
     {
