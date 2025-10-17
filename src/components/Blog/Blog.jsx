@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Modal from '../Modal/Modal';
 import { 
   BookOpen, 
   User, 
@@ -40,6 +41,9 @@ const Blog = () => {
       readTime: "6 min read"
     }
   ];
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedPost, setSelectedPost] = useState(null);
 
   return (
     <section className="py-20 lg:py-28 bg-gradient-to-b from-gray-50 via-white to-gray-50 relative overflow-hidden">
@@ -117,7 +121,13 @@ const Blog = () => {
                   </div>
                   
                   {/* Read More Link */}
-                  <button className="mt-6 w-full flex items-center justify-center gap-2 text-green-600 hover:text-green-700 font-semibold group/btn transition-all duration-300">
+                  <button
+                    onClick={() => {
+                      setSelectedPost(post);
+                      setIsModalOpen(true);
+                    }}
+                    className="mt-6 w-full flex items-center justify-center gap-2 text-green-600 hover:text-green-700 font-semibold group/btn transition-all duration-300"
+                  >
                     Read Article
                     <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                   </button>
@@ -126,6 +136,16 @@ const Blog = () => {
             );
           })}
         </div>
+
+        {/* Article Modal */}
+        <Modal
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+          title={selectedPost?.title}
+        >
+          <div className="text-sm text-gray-500 mb-2">By {selectedPost?.author} • {selectedPost?.date}</div>
+          <p className="text-gray-700 leading-relaxed">{selectedPost?.excerpt}</p>
+        </Modal>
 
         {/* View All CTA */}
         <div className="text-center">

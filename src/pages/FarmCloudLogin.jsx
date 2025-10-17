@@ -181,7 +181,7 @@ const FarmCloudLogin = () => {
                   Don't have a FarmCloud™ account?
                 </p>
                 <button className="w-full border-2 border-green-600 text-green-600 py-3 px-4 rounded-lg hover:bg-green-600 hover:text-white transition-all duration-300 font-semibold flex items-center justify-center gap-2 group">
-                  Sign up for FarmCloud™
+                  Talk to a Consultant
                   <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-200" />
                 </button>
               </div>
@@ -205,7 +205,7 @@ const FarmCloudLogin = () => {
                 
                 <div className="grid grid-cols-2 gap-4">
                   <div className="text-center p-4 bg-white/10 rounded-lg backdrop-blur-sm">
-                    <div className="text-2xl font-bold">21K+</div>
+                    <div className="text-2xl font-bold">1+</div>
                     <div className="text-green-200 text-sm">Active Farmers</div>
                   </div>
                   <div className="text-center p-4 bg-white/10 rounded-lg backdrop-blur-sm">
@@ -256,21 +256,9 @@ const FarmCloudLogin = () => {
             </div>
           </div>
         </div>
-
-        {/* Footer Links */}
-        <div className="text-center mt-12">
-          <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-600">
-            <a href="/privacy" className="hover:text-green-600 transition-colors duration-200">Privacy Policy</a>
-            <a href="/terms" className="hover:text-green-600 transition-colors duration-200">Terms of Service</a>
-            <a href="/support" className="hover:text-green-600 transition-colors duration-200">Support</a>
-            <a href="/contact" className="hover:text-green-600 transition-colors duration-200">Contact Us</a>
-          </div>
-          <p className="text-gray-500 text-sm mt-4">
-            © 2024 Crat_Agri. FarmCloud™ is a trademark of Crat_Agri.
-          </p>
-        </div>
       </div>
-    </div>
+      </div>
+        
   );
 };
 

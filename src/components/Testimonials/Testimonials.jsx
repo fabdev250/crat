@@ -19,23 +19,23 @@ const Testimonials = () => {
       role: "Telephone Farmer",
       content: "Yeah, I think FarmCloud, to be honest, as an app for just capturing farming activities makes it so seamless. I don't know, maybe sometimes just explaining it to another person, they may not get that appreciation...",
       rating: 5,
-      avatar: "J"
+      avatar: "M"
     },
     {
-      name: "Spice World",
-      location: "Nairobi",
-      role: "Spice World Limited Kenya",
+      name: "Mukeshimana Jean",
+      location: "Rubavu",
+      role: "Interprise Farmer",
       content: "We export crops grown by over 60,000 farmers and FarmCloud helps our agronomists to review farm activities and ensure all our outgrowers are compliant with our quality management system...",
       rating: 5,
-      avatar: "S"
+      avatar: "M"
     },
     {
-      name: "Chemondin Group",
-      location: "West Pokot",
+      name: "Bamporiki Jean Damascene",
+      location: "Musanze",
       role: "Farmer",
       content: "You would see as if this structure is small. But if you compare growing this tomatoes on a two acre open field, you would harvest more from a greenhouse. Crops in a greenhouse will survive in heavy rains than in open field.",
       rating: 5,
-      avatar: "C"
+      avatar: "B"
     }
   ];
 
@@ -160,7 +160,7 @@ const Testimonials = () => {
         {/* CTA Section */}
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-6">
-            {/* Video CTA */}
+            {/* Video CTA 
             <a 
               href="#videos"
               className="group bg-gradient-to-br from-green-600 to-green-500 rounded-2xl p-8 hover:shadow-2xl hover:shadow-green-600/30 transition-all duration-300 hover:-translate-y-1 relative overflow-hidden"
@@ -181,9 +181,9 @@ const Testimonials = () => {
                   <ArrowRight className="w-5 h-5" />
                 </span>
               </div>
-            </a>
+            </a>*/}
 
-            {/* Blog CTA */}
+            {/* Blog CTA 
             <a 
               href="#blog"
               className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
@@ -201,7 +201,7 @@ const Testimonials = () => {
                 Read articles
                 <ArrowRight className="w-5 h-5" />
               </span>
-            </a>
+            </a>*/}
           </div>
         </div>
       </div>

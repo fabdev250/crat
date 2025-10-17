@@ -88,7 +88,7 @@ const Products = () => {
     },
     {
       name: "HB Lab Ltd",
-      logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfpIHlp1HJfSxs4Hr_3753Sjspt1yjLMO8qg&s",
+      logo: "https://www.hblab.rw/assets/CRAT-5i5aQfy5.png",
       description: "Strategic Partner",
     },
     {
@@ -107,6 +107,17 @@ const Products = () => {
       description: "Funding Partner",
     },
   ];
+
+  // Fallback handler for external partner images (handles hotlink blocks/404s)
+  const handleImgError = (e) => {
+    try {
+      e.currentTarget.onerror = null;
+      e.currentTarget.src = '/icons/72.png';
+      e.currentTarget.classList.add('opacity-60');
+    } catch (err) {
+      // ignore
+    }
+  };
 
   return (
     <section className="py-20 lg:py-28 bg-gradient-to-b from-gray-50 via-white to-gray-50 relative overflow-hidden">
@@ -285,10 +296,13 @@ const Products = () => {
               {partners.map((partner, index) => (
                 <div key={index} className="group relative">
                   <div className="bg-white rounded-2xl shadow-lg p-6 flex items-center justify-center h-28 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 border border-gray-100">
-                    {partner.name === "CRAT" ? (
+                      {partner.name === "CRAT" ? (
                       <img
                         src={partner.logo}
                         alt={partner.name}
+                        loading="lazy"
+                        crossOrigin="anonymous"
+                        onError={handleImgError}
                         className="max-w-full max-h-full object-contain filter group-hover:brightness-110 transition-all duration-300"
                       />
                     ) : (

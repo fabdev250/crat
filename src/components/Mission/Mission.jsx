@@ -63,7 +63,7 @@ const Mission = () => {
             </div>
             
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-              Empowering African <span className="bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent">Farmers</span>
+              Empowering Rwanda <span className="bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent">Farmers</span>
             </h2>
             
             <div className="space-y-4">
