@@ -73,6 +73,26 @@ const Contact = () => {
     }
   ];
 
+  // Regions in Rwanda used for the Location select
+  const rwandaRegions = [
+    'Kigali',
+    'Northern Province',
+    'Southern Province',
+    'Eastern Province',
+    'Western Province'
+  ];
+
+  // Common farm types for the Farm Type select
+  const farmTypes = [
+    'Smallholder (subsistence)',
+    'Commercial (cash crops)',
+    'Horticulture (fruits & vegetables)',
+    'Livestock (cattle, goats)',
+    'Poultry',
+    'Aquaculture',
+    'Agroforestry'
+  ];
+
   const validateForm = () => {
     const newErrors = {};
 
