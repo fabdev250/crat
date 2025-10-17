@@ -16,9 +16,9 @@ const Contact = () => {
       country: "Rwanda",
       flag: "🇷🇼",
       gradient: "from-blue-500 to-cyan-600",
-      physicalAddress: "Kigali, Rwanda",
-      postalAddress: "P.O.BOX 1234, Kigali, Rwanda",
-      phone: "+250 788 123 456",
+      physicalAddress: "Gisenyi, Rwanda",
+      postalAddress: "P.O.BOX 1234, Gisenyi, Rwanda",
+      phone: "+250 785 599 926",
       isPrimary: true
     }
   ];
@@ -27,20 +27,20 @@ const Contact = () => {
     {
       icon: Mail,
       label: "General Information",
-      value: "Tuyizerejeancloude@gmail.com",
-      link: "mailto:info@cratagri.io"
+      value: "jsongclaude21@gmail.com",
+      link: "jsongclaude21@gmail.com"
     },
     {
-      icon: Send,
-      label: "Sales Queries",
-      value: "sales@cratagri.io",
-      link: "mailto:sales@cratagri.io"
+      icon: Phone,
+      label: "Phone Number",
+      value: "0785599926",
+      link: "0785599926"
     },
     {
       icon: MessageCircle,
       label: "Customer Support",
-      value: "support@cratagri.io",
-      link: "mailto:support@cratagri.io"
+      value: "jsongclaude21@gmail.com",
+      link: "jsongclaude21@gmail.com"
     }
   ];
 
@@ -175,7 +175,7 @@ const Contact = () => {
             </div>
             <p className="text-gray-500 text-sm text-center mt-4">
               <Globe className="w-4 h-4 inline mr-1" />
-              Kigali Time (GMT+2)
+              Gisenyi Time (GMT+2)
             </p>
           </div>
         </div>
