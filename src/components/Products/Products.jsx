@@ -90,22 +90,7 @@ const Products = () => {
       name: "HB Lab Ltd",
       logo: "https://www.hblab.rw/assets/CRAT-5i5aQfy5.png",
       description: "Strategic Partner",
-    },
-    {
-      name: "Partner 3",
-      logo: "/partner3.png",
-      description: "Technology Partner",
-    },
-    {
-      name: "Partner 4",
-      logo: "/partner4.png",
-      description: "Implementation Partner",
-    },
-    {
-      name: "Partner 5",
-      logo: "/partner5.png",
-      description: "Funding Partner",
-    },
+    }
   ];
 
   // Fallback handler for external partner images (handles hotlink blocks/404s)
@@ -272,7 +257,7 @@ const Products = () => {
         </div>
 
         {/* Partners Section */}
-        <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-8 lg:p-12 shadow-2xl relative overflow-hidden">
+        <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-8 lg:p-12 shadow-2xl relative overflow-hidden place-items-center">
           {/* Decorative elements */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-green-500/10 rounded-full blur-3xl" />
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl" />
@@ -294,8 +279,8 @@ const Products = () => {
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-8">
               {partners.map((partner, index) => (
-                <div key={index} className="group relative">
-                  <div className="bg-white rounded-2xl shadow-lg p-6 flex items-center justify-center h-28 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 border border-gray-100">
+                <div key={index} className="group relative place-items-center">
+                  <div className="bg-white rounded-2xl shadow-lg p-6 flex items-center justify-center h-28 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 border border-gray-100 w-full max-w-[12rem]">
                       {partner.name === "CRAT" ? (
                       <img
                         src={partner.logo}
