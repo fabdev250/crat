@@ -455,7 +455,7 @@ const FarmCloud = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-600 to-cyan-700">
+      {/* <section className="py-20 bg-gradient-to-br from-blue-600 to-cyan-700">
         <div className="container mx-auto px-4 lg:px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -507,7 +507,7 @@ const FarmCloud = () => {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* Demo Booking Modal */}
       <DemoBookingModal

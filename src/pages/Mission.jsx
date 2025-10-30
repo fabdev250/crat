@@ -10,7 +10,7 @@ const Mission = () => {
           <p className="text-lg text-gray-600 mb-6">
             Our mission is to empower African farmers with modern technology solutions that make farming simpler, more profitable, and sustainable.
           </p>
-          {/* Add more mission content */}
+          {/* Add more mission comment  content */}
         </div>
       </div>
     </div>

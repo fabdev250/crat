@@ -204,7 +204,7 @@ const Contact = () => {
             >
               <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
             <MapPin className="w-4 h-4" />
-                Contact Crat_Agri
+                Contact Digital Agri Innovation
               </div>
 
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
@@ -546,7 +546,7 @@ const Contact = () => {
                     Message Sent Successfully!
                   </h3>
                   <p className="text-gray-600 mb-6">
-                    Thank you for contacting Crat_Agri. Our team will get back
+                    Thank you for contacting Digital Agri Innovation. Our team will get back
                     to you within 24 hours.
                   </p>
                   <div className="bg-green-50 border border-green-200 rounded-xl p-4">
@@ -582,7 +582,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <h3 className="text-2xl font-bold text-white">
-                          Crat_Agri Rwanda
+                          Digital Agri Innovation Rwanda
                         </h3>
                         <p className="text-white/90">Rubavu, Gisenyi</p>
                       </div>
@@ -709,7 +709,7 @@ const Contact = () => {
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
               Why Rwanda Farmers Choose{" "}
               <span className="bg-gradient-to-r from-green-600 to-emerald-500 bg-clip-text text-transparent">
-                Crat_Agri
+                Digital Agri Innovation 
               </span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">

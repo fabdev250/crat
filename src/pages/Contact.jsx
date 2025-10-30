@@ -5,14 +5,14 @@ import Contact from "../components/Contact/Contact";
 const ContactPage = () => {
   // SEO Meta tags
   useEffect(() => {
-    document.title = "Contact Us - Crat_Agri | Get in Touch";
+    document.title = "Contact Us - Digital Agri Innovation | Get in Touch";
 
     // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "Get in touch with Crat_Agri for agricultural solutions, FarmCloud™ demos, and expert consultation. Contact our team of agricultural experts today."
+        "Get in touch with Digital Agri Innovation for agricultural solutions, FarmCloud™ demos, and expert consultation. Contact our team of agricultural experts today."
       );
     } else {
       const meta = document.createElement("meta");
@@ -24,7 +24,7 @@ const ContactPage = () => {
 
     // Cleanup function to reset title when component unmounts
     return () => {
-      document.title = "Crat_Agri - Innovative Farming Solutions";
+      document.title = "Digital Agri Innovation - Innovative Farming Solutions";
     };
   }, []);
 
