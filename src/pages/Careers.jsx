@@ -8,7 +8,7 @@ const Careers = () => {
       department: "Technology",
       location: "Nairobi, Kenya",
       type: "Full-time",
-      description: "We are looking for a skilled Full Stack Developer to join our technology team and help build innovative solutions for African farmers."
+      description: "We are looking for a skilled Full Stack Developer to join our technology team and help build innovative solution for African farmers."
     },
     {
       title: "Agricultural Field Officer",

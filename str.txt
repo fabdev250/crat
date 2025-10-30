@@ -27,3 +27,6 @@ src/
 ├── App.jsx
 ├── main.jsx
 └── index.css
+
+
+we are in just kidding with pc I think we 
